@@ -1,33 +1,137 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import LandingHeader from "../components/LandingHeader.astro";
-import HeroLanding from "../components/HeroLanding.astro";
-import ModelY from "../components/ModelY.astro";
+import Section from "../components/Section.astro";
+import FooterTesla from "../components/items/FooterTesla.astro";
+import FooterTeslaB from "../components/items/FooterTeslaB.astro";
+import ImgBackground from "../components/items/ImgBackground.astro";
 ---
 
 <Layout title="Tesla">
   <LandingHeader />
-  <main class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth">
+
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth"
+  >
     <div class="snap-center">
-      <HeroLanding />
+      <!-- Seccion 1 -->
+      <Section
+        tittle="Disfrute de Tesla"
+        subTittle="Programe una prueba de conducción hoy mismo"
+        color="white"
+      >
+        <div slot="footer">
+          <a
+            class="border-[3px] border-white bg-white/5 backdrop-blur-3xl px-12 py-2 rounded text-sm font-semibold hover:bg-white hover:text-black transition duration-1000"
+            href="#"
+          >
+            Prueba de conducción
+          </a>
+        </div>
+        <video
+          slot="background"
+          class="object-center object-cover h-full w-full"
+          autoplay
+          muted
+          loop
+          src="video.webm"></video>
+      </Section>
     </div>
+    <!-- Seccion 2 -->
     <div class="snap-center">
-      <ModelY />
+      <Section
+        tittle={"Modelo 3"}
+        subTittle={"Concertar una prueba de conducción"}
+        color={"black"}
+      >
+        <div slot="background">
+          <ImgBackground nameModel="Model-3.avif" />
+        </div>
+
+        <div slot="footer" class="gap-x-6 flex mx-auto">
+          <FooterTeslaB text={"Explorar inventari"} />
+          <FooterTesla text={"Pedido personalizado"} />
+        </div>
+      </Section>
     </div>
+    <!-- Seccion 3 -->
     <div class="snap-center">
-      <HeroLanding />
+      <Section
+        tittle={"Modelo Y"}
+        subTittle={"Concertar una prueba de conducción"}
+        color={"black"}
+      >
+        <div slot="background" class="object-center object-cover h-full w-full">
+          <ImgBackground nameModel="Model-Y.avif" />
+        </div>
+
+        <div slot="footer" class="gap-x-6 flex mx-auto">
+          <FooterTeslaB text={"Explorar inventari"} />
+          <FooterTesla text={"Pedido personalizado"} />
+        </div>
+      </Section>
     </div>
+    <!-- Seccion 4 -->
     <div class="snap-center">
-      <HeroLanding />
+      <Section
+        tittle={"Modelo S"}
+        subTittle={"Concertar una prueba de conducción"}
+        color={"black"}
+      >
+        <div slot="background" class="object-center object-cover h-full w-full">
+          <ImgBackground nameModel="Model-S.avif" />
+        </div>
+        <div slot="footer" class="gap-x-6 flex mx-auto">
+          <FooterTeslaB text={"Pedido personalizado"} />
+          <FooterTesla text={"Saber más"} />
+        </div>
+      </Section>
     </div>
+    <!-- Seccion 5 -->
     <div class="snap-center">
-      <HeroLanding />
+      <Section
+        tittle={"Modelo X"}
+        subTittle={"Concertar una prueba de conducción"}
+        color={"black"}
+      >
+        <div slot="background" class="object-center object-cover h-full w-full">
+          <ImgBackground nameModel="Model-X.avif" />
+        </div>
+        <div slot="footer" class="gap-x-6 flex mx-auto">
+          <FooterTeslaB text={"Pedido personalizado"} />
+          <FooterTesla text={"Saber más"} />
+        </div>
+      </Section>
     </div>
+    <!-- Seccion 6 -->
     <div class="snap-center">
-      <HeroLanding />
+      <Section
+        tittle={"Solar y Powerwall"}
+        subTittle={"Concertar una prueba de conducción"}
+        color={"black"}
+      >
+        <div slot="background" class="object-center object-cover h-full w-full">
+          <ImgBackground nameModel="SolarPanels.avif" />
+        </div>
+        <div slot="footer">
+          <FooterTeslaB text={"Saber más"} />
+        </div>
+      </Section>
     </div>
+    <!-- Seccion 7 -->
     <div class="snap-center">
-      <HeroLanding />
+      <Section
+        tittle={"Accesorios"}
+        subTittle={"Concertar una prueba de conducción"}
+        color={"black"}
+      >
+        <div slot="background" class="object-center object-cover h-full w-full">
+          <ImgBackground nameModel="Accessories.avif" />
+        </div>
+        <div slot="footer">
+          <FooterTesla text={"Comprar ahora"} />
+        </div>
+      </Section>
     </div>
   </main>
 </Layout>
