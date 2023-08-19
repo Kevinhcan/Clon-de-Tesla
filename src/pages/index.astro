@@ -4,13 +4,16 @@ import LandingHeader from "../components/LandingHeader.astro";
 import Section from "../components/Section.astro";
 import FooterTesla from "../components/FooterTesla.astro";
 import FooterTeslaB from "../components/FooterTeslaB.astro";
+import ImgBackground from "../components/ImgBackground.astro";
+
+
 ---
 
 <Layout title="Tesla">
   <LandingHeader />
 
   <main
-    class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth"
+    class="snap-y snap-mandatory relative w-screen h-screen overflow-auto scroll-smooth"
   >
     <div class="snap-center">
       <!-- Seccion 1 -->
@@ -43,12 +46,9 @@ import FooterTeslaB from "../components/FooterTeslaB.astro";
         subTittle={"Concertar una prueba de conducción"}
         color={"black"}
       >
-        <img
-          slot="Model"
-          class="object-center object-cover h-full w-full"
-          src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_2560,w_4096,c_fit,f_auto,q_auto:best/Homepage-Model-3-Desktop-LHD"
-          alt=""
-        />
+      <div class="object-center object-cover h-full w-full" slot="Model">
+          <ImgBackground nameModel = "https://digitalassets.tesla.com/tesla-contents/image/upload/h_2560,w_4096,c_fit,f_auto,q_auto:best/Homepage-Model-3-Desktop-LHD" />
+      </div>
         <div slot="footer" class="gap-x-6 flex mx-auto">
           <FooterTeslaB text={"Explorar inventari"} />
           <FooterTesla text={"Pedido personalizado"} />
@@ -62,12 +62,10 @@ import FooterTeslaB from "../components/FooterTeslaB.astro";
         subTittle={"Concertar una prueba de conducción"}
         color={"black"}
       >
-        <img
-          slot="Model"
-          class="object-center object-cover h-full w-full"
-          src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_2400,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-Y-Global-Desktop"
-          alt=""
-        />
+  
+        <div class="object-center object-cover h-full w-full" slot="Model">
+          <ImgBackground class="object-center object-cover h-full w-full" nameModel = "https://digitalassets.tesla.com/tesla-contents/image/upload/h_2400,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-Y-Global-Desktop" />
+        <div/>
         <div slot="footer" class="gap-x-6 flex mx-auto">
           <FooterTeslaB text={"Explorar inventari"} />
           <FooterTesla text={"Pedido personalizado"} />
@@ -81,12 +79,9 @@ import FooterTeslaB from "../components/FooterTeslaB.astro";
         subTittle={"Concertar una prueba de conducción"}
         color={"black"}
       >
-        <img
-          slot="Model"
-          class="object-center object-cover h-full w-full"
-          src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-homepage-desktop"
-          alt=""
-        />
+      <div class="object-center object-cover h-full w-full" slot="Model">
+        <ImgBackground nameModel = "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-homepage-desktop" />
+    </div>
         <div slot="footer" class="gap-x-6 flex mx-auto">
           <FooterTeslaB text={"Pedido personalizado"} />
           <FooterTesla text={"Saber más"} />
@@ -100,12 +95,9 @@ import FooterTeslaB from "../components/FooterTeslaB.astro";
         subTittle={"Concertar una prueba de conducción"}
         color={"black"}
       >
-        <img
-          slot="Model"
-          class="object-center object-cover h-full w-full"
-          src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-X-Desktop-LHD"
-          alt=""
-        />
+      <div class="object-center object-cover h-full w-full" slot="Model">
+        <ImgBackground nameModel = "https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-X-Desktop-LHD" />
+    </div>
         <div slot="footer" class="gap-x-6 flex mx-auto">
           <FooterTeslaB text={"Pedido personalizado"} />
           <FooterTesla text={"Saber más"} />
@@ -119,12 +111,9 @@ import FooterTeslaB from "../components/FooterTeslaB.astro";
         subTittle={"Concertar una prueba de conducción"}
         color={"black"}
       >
-        <img
-          slot="Model"
-          class="object-center object-cover h-full w-full"
-          src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Desktop_SolarPanels"
-          alt=""
-        />
+      <div class="object-center object-cover h-full w-full" slot="Model">
+        <ImgBackground nameModel = "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Desktop_SolarPanels" />
+    </div>
         <div slot="footer">
           <FooterTeslaB text={"Saber más"} />
         </div>
@@ -137,12 +126,10 @@ import FooterTeslaB from "../components/FooterTeslaB.astro";
         subTittle={"Concertar una prueba de conducción"}
         color={"black"}
       >
-        <img
-          slot="Model"
-          class="object-center object-cover h-full w-full"
-          src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-EMEA.jpg"
-          alt=""
-        />
+      <div class="object-center object-cover h-full w-full" slot="Model">
+        <ImgBackground nameModel = "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-EMEA.jpg" />
+    </div>
+       
         <div slot="footer">
           <FooterTesla text={"Comprar ahora"} />
         </div>
